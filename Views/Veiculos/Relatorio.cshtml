@@ -1,0 +1,45 @@
+@model IEnumerable<MeuProjeto.Models.Consumo>
+
+@{
+    ViewData["Title"] = "Relatório";
+}
+
+<h1>Relatório do veículo: @ViewBag.Veiculo.Nome</h1>
+<h3>Valor total: @ViewBag.Total.ToString("C2", new System.Globalization.CultureInfo("pt-BR"))</h3>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Descrição</th>
+            <th>Data</th>
+            <th>Valor</th>
+            <th>Km</th>
+            <th>Tipo de Combustível</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Descricao</td>
+                <td>@item.Data.ToString("dd/MM/yyyy HH:mm")</td>
+                <td>@item.Valor.ToString("C2", new System.Globalization.CultureInfo("pt-BR"))</td>
+                <td>@item.Km</td>
+                <td>@item.Tipo</td>
+            </tr>
+        }
+    </tbody>
+    <tfoot>
+        <tr>
+            <td><strong>Total</strong></td>
+            <td></td>
+            <td><strong>@ViewBag.Total.ToString("C2", new System.Globalization.CultureInfo("pt-BR"))</strong></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </tfoot>
+</table>
+
+<div class="form-group d-flex gap-2">
+    <a asp-action="Index" class="btn btn-info text-white">Voltar</a>
+</div>

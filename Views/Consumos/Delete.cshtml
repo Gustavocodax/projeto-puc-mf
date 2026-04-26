@@ -1,0 +1,38 @@
+@model MeuProjeto.Models.Consumo
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Excluir consumo</h1>
+
+<h4>Tem certeza que deseja excluir este consumo?</h4>
+<hr />
+<div>
+    <dl class="row">
+        <dt class="col-sm-3">Descrição</dt>
+        <dd class="col-sm-9">@Model.Descricao</dd>
+
+        <dt class="col-sm-3">Data</dt>
+        <dd class="col-sm-9">@Model.Data</dd>
+
+        <dt class="col-sm-3">Valor</dt>
+        <dd class="col-sm-9">@Model.Valor.ToString("C2", new System.Globalization.CultureInfo("pt-BR"))</dd>
+
+        <dt class="col-sm-3">Km</dt>
+        <dd class="col-sm-9">@Model.Km</dd>
+
+        <dt class="col-sm-3">Tipo de Combustível</dt>
+        <dd class="col-sm-9">@Model.Tipo</dd>
+
+        <dt class="col-sm-3">Veículo</dt>
+        <dd class="col-sm-9">@Model.Veiculo.Nome</dd>
+    </dl>
+</div>
+<form asp-action="Delete">
+    <input type="hidden" asp-for="Id" />
+    <div class="form-group d-flex gap-2">
+        <a asp-action="Index" class="btn btn-info text-white">Voltar</a>
+        <input type="submit" value="Excluir" class="btn btn-danger" />
+    </div>
+</form>

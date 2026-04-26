@@ -1,0 +1,43 @@
+@model IEnumerable<MeuProjeto.Models.Consumo>
+
+@{
+    ViewData["Title"] = "Consumos";
+}
+
+<h1>Consumos</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-success">Adicionar novo Consumo</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Descrição</th>
+            <th>Data</th>
+            <th>Valor</th>
+            <th>Km</th>
+            <th>Tipo de Combustível</th>
+            <th>Veículo</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Descricao</td>
+                <td>@item.Data</td>
+                <td>@item.Valor.ToString("C2", new System.Globalization.CultureInfo("pt-BR"))</td>
+                <td>@item.Km</td>
+                <td>@item.Tipo</td>
+                <td>@item.Veiculo.Nome</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning">Editar</a>
+                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-primary">Visualizar</a>
+                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Apagar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
