@@ -1,0 +1,32 @@
+@model MeuProjeto.Models.Veiculo
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Excluir veículo</h1>
+
+<h4>Tem certeza que deseja excluir este veículo?</h4>
+<hr />
+<div>
+    <dl class="row">
+        <dt class="col-sm-3">Nome</dt>
+        <dd class="col-sm-9">@Model.Nome</dd>
+
+        <dt class="col-sm-3">Placa</dt>
+        <dd class="col-sm-9">@Model.Placa</dd>
+
+        <dt class="col-sm-3">Ano Fabricação</dt>
+        <dd class="col-sm-9">@Model.AnoFabricacao</dd>
+
+        <dt class="col-sm-3">Ano Modelo</dt>
+        <dd class="col-sm-9">@Model.AnoModelo</dd>
+    </dl>
+</div>
+<form asp-action="Delete">
+    <input type="hidden" asp-for="Id" />
+    <div class="form-group d-flex gap-2">
+        <input type="submit" value="Excluir" class="btn btn-danger" />
+        <a asp-action="Index" class="btn btn-info text-white">Voltar</a>
+    </div>
+</form>

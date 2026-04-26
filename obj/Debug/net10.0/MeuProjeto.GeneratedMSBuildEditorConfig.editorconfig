@@ -46,6 +46,26 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/gustavohenriquemartinssilva/Documents/mf-dev-backend-2026/Views/Veiculos/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVmVpY3Vsb3MvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/gustavohenriquemartinssilva/Documents/mf-dev-backend-2026/Views/Veiculos/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVmVpY3Vsb3MvRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/gustavohenriquemartinssilva/Documents/mf-dev-backend-2026/Views/Veiculos/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVmVpY3Vsb3MvRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/gustavohenriquemartinssilva/Documents/mf-dev-backend-2026/Views/Veiculos/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVmVpY3Vsb3MvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/gustavohenriquemartinssilva/Documents/mf-dev-backend-2026/Views/Veiculos/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVmVpY3Vsb3MvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/gustavohenriquemartinssilva/Documents/mf-dev-backend-2026/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

@@ -1,0 +1,29 @@
+@model MeuProjeto.Models.Veiculo
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Detalhes do veículo</h1>
+
+<h4>Veículo</h4>
+<hr />
+<div>
+    <dl class="row">
+        <dt class="col-sm-3">Nome</dt>
+        <dd class="col-sm-9">@Model.Nome</dd>
+
+        <dt class="col-sm-3">Placa</dt>
+        <dd class="col-sm-9">@Model.Placa</dd>
+
+        <dt class="col-sm-3">Ano Fabricação</dt>
+        <dd class="col-sm-9">@Model.AnoFabricacao</dd>
+
+        <dt class="col-sm-3">Ano Modelo</dt>
+        <dd class="col-sm-9">@Model.AnoModelo</dd>
+    </dl>
+</div>
+<div class="form-group d-flex gap-2">
+    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">Editar</a>
+    <a asp-action="Index" class="btn btn-info text-white">Voltar</a>
+</div>
