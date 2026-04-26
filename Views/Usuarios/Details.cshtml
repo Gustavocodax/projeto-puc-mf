@@ -1,0 +1,23 @@
+@model MeuProjeto.Models.Usuario
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Dados do usuário</h1>
+
+<h4>Usuário</h4>
+<hr />
+<div>
+    <dl class="row">
+        <dt class="col-sm-3">Nome</dt>
+        <dd class="col-sm-9">@Model.Nome</dd>
+
+        <dt class="col-sm-3">Perfil</dt>
+        <dd class="col-sm-9">@Model.Perfil</dd>
+    </dl>
+</div>
+<div class="form-group d-flex gap-2">
+    <a asp-action="Index" class="btn btn-info text-white">Voltar</a>
+    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">Editar</a>
+</div>
