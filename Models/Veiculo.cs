@@ -12,7 +12,7 @@ namespace MeuProjeto.Models
         [Required(ErrorMessage = "Obrigatório informar o nome!")]
         public string Nome { get; set; }
 
-        [Required(ErrorMessage = "Obrigatório informar a placa!")]
+        [Required(ErrorMessage = "Obrigatório ia nformar placa!")]
         public string Placa { get; set; }
 
         [Required(ErrorMessage = "Obrigatório informar o Ano de Fabricação!")]
